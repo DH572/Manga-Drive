@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-aFq/bzH65dt+w6FI2ooMVUpc+21e0SRygnTpmBvdBgSdnuTN7QbdgL+OapgHtvPp"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="styles/style.css" />
+  </head>
+  <body>
+    <div class="container d-flex justify-content-center">
+      <div id="review-container" class="container">
+        <h1><%=item.title%></h1>
+        <img class="manga-image" src="<%=item.picture_url%>" />
+        <div class="container my-1 ms-5">
+          <form id="reviewForm" method="post" action="/add-manga">
+            <div class="mb-3 d-flex flex-column">
+              <label for="reviewInput" class="form-label"
+                >Your review of this manga:
+              </label>
+              <input
+                type="text"
+                class="form-control"
+                name="review"
+                id="reviewInput"
+                value="Fill this in."
+                aria-describedby="reviewHelp"
+              />
+            </div>
+            <div class="mb-3 d-flex flex-column">
+              <label for="ratingInput" class="form-label">Rating: </label>
+              <input
+                type="number"
+                class="form-control"
+                name="rating"
+                id="ratingInput"
+                value="0"
+                min="0"
+                max="5"
+              />
+            </div>
+            <button
+              type="submit"
+              class="btn btn-danger mt-auto"
+              name="add"
+              value="false"
+              form="reviewForm"
+            >
+              Cancel
+            </button>
+            <button
+              type="submit"
+              class="btn btn-primary"
+              name="add"
+              value="<%=index%>"
+              form="reviewForm"
+            >
+              Submit
+            </button>
+          </form>
+        </div>
+      </div>
+    </div>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

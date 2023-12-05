@@ -1,0 +1,80 @@
+.icon {
+  height: 20px;
+}
+
+.manga-image {
+  height: 10em;
+  width: 6.6em;
+  float: left;
+  margin: 10px;
+}
+
+.search-image {
+  height: 10em;
+  width: 6.6em;
+  margin: 10px;
+}
+
+.title-text {
+  font-size: x-large;
+}
+
+.edit-button {
+  margin-left: 5px;
+  height: 20px;
+  border-width: 0px;
+  background-color: white;
+}
+
+#title-container {
+  padding: 15px 15px 15px 15px;
+  background: rgb(255, 255, 255);
+  overflow: auto;
+  position: relative;
+}
+
+#list-container {
+  width: 80%;
+  border: 1px solid Black;
+  padding: 15px 15px 15px 15px;
+  margin: 20px 20px 20px 20px;
+  background: rgb(255, 255, 255);
+  overflow: auto;
+  box-shadow: 5px 5px 2px #888888;
+  position: relative;
+}
+
+#searchlist-container {
+  width: 80%;
+  border: 1px solid Black;
+  padding: 15px 15px 15px 15px;
+  margin: 20px 20px 20px 20px;
+  background: #d2ebff;
+  overflow: auto;
+  box-shadow: 5px 5px 2px #888888;
+  position: relative;
+}
+
+#review-container {
+  width: 100%;
+  border: 1px solid Black;
+  padding: 15px 15px 15px 15px;
+  margin: 20px 20px 20px 20px;
+  background: #ffffff;
+  overflow: auto;
+  box-shadow: 5px 5px 2px #888888;
+  position: relative;
+}
+
+#close-button {
+  position: absolute;
+  background: red;
+  color: white;
+  top: 25px;
+  right: 10px;
+  border-width: 1px;
+}
+
+#review-input {
+  height: 200px;
+}
